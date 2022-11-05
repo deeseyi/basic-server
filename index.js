@@ -107,7 +107,7 @@ const Calculate = (req, res) => {
       const minus = bodyX - bodyY;
       return res.status(200).json({
         slackUsername: "Diseyi",
-        operation_type: "subtraction",
+        operation_type: "Subtraction",
         result: minus,
       });
     } catch (error) {
@@ -127,7 +127,7 @@ const Calculate = (req, res) => {
       const minus = queryX - queryY;
       return res.status(200).json({
         slackUsername: "Diseyi",
-        operation_type: "subtraction",
+        operation_type: "Subtraction",
         result: minus,
       });
     } catch (error) {
