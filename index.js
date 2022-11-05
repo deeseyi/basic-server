@@ -65,9 +65,9 @@ const Calculate = (req, res) => {
     try {
       const add = bodyX + bodyY;
       return res.status(200).json({
+        slackUsername: "Diseyi",
         operation_type: "addition",
         result: add,
-        slackUsername: "Diseyi",
       });
     } catch (error) {
       return res.status(500).json({
@@ -85,9 +85,9 @@ const Calculate = (req, res) => {
     try {
       const add = queryX + queryY;
       return res.status(200).json({
+        slackUsername: "Diseyi",
         operation_type: "addition",
         result: add,
-        slackUsername: "Diseyi",
       });
     } catch (error) {
       return res.status(500).json({
@@ -106,9 +106,9 @@ const Calculate = (req, res) => {
     try {
       const minus = bodyX - bodyY;
       return res.status(200).json({
+        slackUsername: "Diseyi",
         operation_type: "subtraction",
         result: minus,
-        slackUsername: "Diseyi",
       });
     } catch (error) {
       return res.status(500).json({
@@ -126,9 +126,9 @@ const Calculate = (req, res) => {
     try {
       const minus = queryX - queryY;
       return res.status(200).json({
+        slackUsername: "Diseyi",
         operation_type: "subtraction",
         result: minus,
-        slackUsername: "Diseyi",
       });
     } catch (error) {
       return res.status(500).json({
@@ -147,9 +147,9 @@ const Calculate = (req, res) => {
     try {
       const multiply = bodyX * bodyY;
       return res.status(200).json({
+        slackUsername: "Diseyi",
         operation_type: "multiplication",
         result: multiply,
-        slackUsername: "Diseyi",
       });
     } catch (error) {
       return res.status(500).json({
@@ -167,9 +167,9 @@ const Calculate = (req, res) => {
     try {
       const multiply = queryX * queryY;
       return res.status(200).json({
+        slackUsername: "Diseyi",
         operation_type: "multiplication",
         result: multiply,
-        slackUsername: "Diseyi",
       });
     } catch (error) {
       return res.status(500).json({
@@ -188,4 +188,3 @@ const Calculate = (req, res) => {
 app.post("/calculate", Calculate);
 
 app.listen(PORT);
-
