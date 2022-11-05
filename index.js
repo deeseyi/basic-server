@@ -96,7 +96,7 @@ const Calculate = (req, res) => {
     }
   }
 
-  subtraction
+  // subtraction
   if (
     (requestBody?.operation_types?.toLowerCase() === "minus") |
     (requestBody?.operation_types?.toLowerCase() === "subtract") |
@@ -137,7 +137,7 @@ const Calculate = (req, res) => {
     }
   }
 
-  multiplication
+  // multiplication
   if (
     (requestBody?.operation_types?.toLowerCase() === "multiply") |
     (requestBody?.operation_types?.toLowerCase() === "multiplication") |
